@@ -1,4 +1,4 @@
-# Project Name
+# JS TODO LIST APP
 
 > One paragraph statement about the project.
 
@@ -16,14 +16,14 @@ Additional description about the project and its features.
 
 ## Live Demo
 
-[Live Demo Link](https://vite-js-template.netlify.app/)
+[Live Demo Link](https://js-todo-list-app.netlify.app/)
 
 ### Development (Running locally)
 
 - Clone the project
 
 ```bash
-git clone https://github.com/moshoodabdullahi/vite-js-template.git
+git clone https://github.com/moshoodabdullahi/js-todo-list-app.git
 
 ```
 
@@ -125,9 +125,8 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration, resources/assets used
-- etc
+- [The Odin Project](https://www.theodinproject.com/lessons/node-path-javascript-todo-list)
+- [Front-End Mentor](https://www.frontendmentor.io/challenges/todo-app-Su1_KokOW)
 
 ## 📝 License
 
