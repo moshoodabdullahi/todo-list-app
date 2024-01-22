@@ -16,7 +16,7 @@ Additional description about the project and its features.
 
 ## Live Demo
 
-[Live Demo Link](https://js-todo-list-app.netlify.app/)
+[Live Demo Link](https://abdullahi-todo-list-app.netlify.app/)
 
 ### Development (Running locally)
 
