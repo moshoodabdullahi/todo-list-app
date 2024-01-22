@@ -1,10 +1,8 @@
-# Project Name
+# JS TODO LIST APP
 
-> One paragraph statement about the project.
+> A Todo List App is a fully functional full-stack application built using JavaScript, Tailwind CSS and Supabase. The app will allow users to manage their todos efficiently, which includes adding new todos, marking them as complete, and deleting todos etc. This is the [Assignment Link](https://github.com/bolah2009/command-line-guide/blob/master/guide/js/02-js-todo-app.md#1-setup) and also the design link [Front-End Mentor](https://www.frontendmentor.io/challenges/todo-app-Su1_KokOW)
 
 ![screenshot](./app_screenshot.png)
-
-Additional description about the project and its features.
 
 ## Built With
 
@@ -16,14 +14,14 @@ Additional description about the project and its features.
 
 ## Live Demo
 
-[Live Demo Link](https://vite-js-template.netlify.app/)
+[Live Demo Link](https://abdullahi-todo-list-app.netlify.app/)
 
 ### Development (Running locally)
 
 - Clone the project
 
 ```bash
-git clone https://github.com/moshoodabdullahi/vite-js-template.git
+git clone https://github.com/moshoodabdullahi/js-todo-list-app.git
 
 ```
 
@@ -125,9 +123,9 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration, resources/assets used
-- etc
+- [The Odin Project](https://www.theodinproject.com/lessons/node-path-javascript-todo-list)
+- [Front-End Mentor](https://www.frontendmentor.io/challenges/todo-app-Su1_KokOW)
+- [Assignment Link](https://github.com/bolah2009/command-line-guide/blob/master/guide/js/02-js-todo-app.md#1-setup)
 
 ## 📝 License
 
