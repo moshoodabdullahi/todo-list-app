@@ -22,7 +22,6 @@ module.exports = {
     },
     backgroundImage: {
       'mobile-light': "url('../../images/bg-mobile-light.jpg')",
-      'icon-cross': "url('../../images/icon-cross.svg')",
       'icon-checked': "url('../../images/icon-check.svg')",
     },
   },

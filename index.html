@@ -24,7 +24,7 @@
         >
           <label class="relative flex cursor-pointer items-center">
             <input
-              class="checked:bg-gradient-to-r mr-2.5 h-5 w-5 cursor-pointer appearance-none rounded-full border border-blue-200 from-blue-700 to-blue-800 checked:bg-icon-checked checked:bg-center checked:bg-no-repeat"
+              class="checked:bg-gradient-to-r peer mr-2.5 h-5 w-5 cursor-pointer appearance-none rounded-full border border-blue-200 from-blue-700 to-blue-800 checked:border-none checked:bg-blue-800 checked:bg-icon-checked checked:bg-center checked:bg-no-repeat"
               aria-label="input"
               title="input-text"
               type="checkbox"
@@ -38,91 +38,132 @@
         </form>
 
         <div>
-          <ul class="mt-5 rounded-tl-lg">
+          <ul class="mt-5 w-96 rounded-tl-lg">
             <li
-              draggable="false"
               class="list-item size-full h-14 list-none justify-between border border-blue-200 bg-blue-0 p-4 text-base text-blue-200"
             >
               <label class="list relative flex cursor-pointer items-center">
                 <input
-                  class="todo-checkbox checked:bg-gradient-to-r peer mr-2.5 h-5 w-5 cursor-pointer appearance-none rounded-full border border-blue-200 from-blue-700 to-blue-800 checked:border-none checked:bg-blue-800 checked:bg-center checked:bg-no-repeat"
+                  class="checked:bg-gradient-to-r peer mr-2.5 h-5 w-5 cursor-pointer appearance-none rounded-full border border-blue-200 from-blue-700 to-blue-800 checked:border-none checked:bg-blue-800 checked:bg-icon-checked checked:bg-center checked:bg-no-repeat"
                   type="checkbox"
                 />
                 <span class="text-blue-400 peer-checked:text-blue-500 peer-checked:line-through"
                   >Complete online JavaScript course</span
                 >
+                <span class="remove h-3 w-3 cursor-pointer">
+                  <img
+                    class="absolute right-3 h-4 w-4"
+                    alt="cross-icon"
+                    title="cross-icon-image"
+                    src="images/icon-cross.svg"
+                  />
+                </span>
               </label>
-              <span class="remove h-4 w-4 cursor-pointer bg-icon-cross"></span>
             </li>
             <li
               class="list-item size-full h-14 list-none justify-between border border-blue-200 bg-blue-0 p-4 text-base text-blue-200"
             >
               <label class="list relative flex cursor-pointer items-center">
                 <input
-                  class="todo-checkbox checked:bg-gradient-to-r peer mr-2.5 h-5 w-5 cursor-pointer appearance-none rounded-full border border-blue-200 from-blue-700 to-blue-800 checked:bg-icon-checked checked:bg-center checked:bg-no-repeat"
+                  class="checked:bg-gradient-to-r peer mr-2.5 h-5 w-5 cursor-pointer appearance-none rounded-full border border-blue-200 from-blue-700 to-blue-800 checked:border-none checked:bg-blue-800 checked:bg-icon-checked checked:bg-center checked:bg-no-repeat"
                   type="checkbox"
                 />
                 <span class="text-blue-400 peer-checked:text-blue-500 peer-checked:line-through"
                   >Jog aound the park 3x</span
                 >
+                <span class="remove h-3 w-3 cursor-pointer">
+                  <img
+                    class="absolute right-3 h-4 w-4"
+                    alt="cross-icon"
+                    title="cross-icon-image"
+                    src="images/icon-cross.svg"
+                  />
+                </span>
               </label>
-              <span class="remove h-4 w-4 cursor-pointer bg-icon-cross"></span>
             </li>
             <li
               class="list-item size-full h-14 list-none justify-between border border-blue-200 bg-blue-0 p-4 text-base text-blue-200"
             >
               <label class="list relative flex cursor-pointer items-center">
                 <input
-                  class="todo-checkbox checked:bg-gradient-to-r peer mr-2.5 h-5 w-5 cursor-pointer appearance-none rounded-full border border-blue-200 from-blue-700 to-blue-800 checked:bg-icon-checked checked:bg-center checked:bg-no-repeat"
+                  class="checked:bg-gradient-to-r peer mr-2.5 h-5 w-5 cursor-pointer appearance-none rounded-full border border-blue-200 from-blue-700 to-blue-800 checked:border-none checked:bg-blue-800 checked:bg-icon-checked checked:bg-center checked:bg-no-repeat"
                   type="checkbox"
                 />
                 <span class="text-blue-400 peer-checked:text-blue-500 peer-checked:line-through"
                   >10 minutes meditation</span
                 >
+                <span class="remove h-3 w-3 cursor-pointer">
+                  <img
+                    class="absolute right-3 h-4 w-4"
+                    alt="cross-icon"
+                    title="cross-icon-image"
+                    src="images/icon-cross.svg"
+                  />
+                </span>
               </label>
-              <span class="remove h-4 w-4 cursor-pointer bg-icon-cross"></span>
             </li>
             <li
               class="list-item size-full h-14 list-none justify-between border border-blue-200 bg-blue-0 p-4 text-base text-blue-200"
             >
               <label class="list relative flex cursor-pointer items-center">
                 <input
-                  class="todo-checkbox checked:bg-gradient-to-r peer mr-2.5 h-5 w-5 cursor-pointer appearance-none rounded-full border border-blue-200 from-blue-700 to-blue-800 checked:bg-icon-checked checked:bg-center checked:bg-no-repeat"
+                  class="checked:bg-gradient-to-r peer mr-2.5 h-5 w-5 cursor-pointer appearance-none rounded-full border border-blue-200 from-blue-700 to-blue-800 checked:border-none checked:bg-blue-800 checked:bg-icon-checked checked:bg-center checked:bg-no-repeat"
                   type="checkbox"
                 />
                 <span class="text-blue-400 peer-checked:text-blue-500 peer-checked:line-through"
                   >Read for 1 hour</span
                 >
+                <span class="remove h-3 w-3 cursor-pointer">
+                  <img
+                    class="absolute right-3 h-4 w-4"
+                    alt="cross-icon"
+                    title="cross-icon-image"
+                    src="images/icon-cross.svg"
+                  />
+                </span>
               </label>
-              <span class="remove h-4 w-4 cursor-pointer bg-icon-cross"></span>
             </li>
             <li
               class="list-item size-full h-14 list-none justify-between border border-blue-200 bg-blue-0 p-4 text-base text-blue-200"
             >
               <label class="list relative flex cursor-pointer items-center">
                 <input
-                  class="todo-checkbox checked:bg-gradient-to-r peer mr-2.5 h-5 w-5 cursor-pointer appearance-none rounded-full border border-blue-200 from-blue-700 to-blue-800 checked:bg-icon-checked checked:bg-center checked:bg-no-repeat"
+                  class="checked:bg-gradient-to-r peer mr-2.5 h-5 w-5 cursor-pointer appearance-none rounded-full border border-blue-200 from-blue-700 to-blue-800 checked:border-none checked:bg-blue-800 checked:bg-icon-checked checked:bg-center checked:bg-no-repeat"
                   type="checkbox"
                 />
                 <span class="text-blue-400 peer-checked:text-blue-500 peer-checked:line-through"
                   >Pick up groceries</span
                 >
+                <span class="remove h-3 w-3 cursor-pointer">
+                  <img
+                    class="absolute right-3 h-4 w-4"
+                    alt="cross-icon"
+                    title="cross-icon-image"
+                    src="images/icon-cross.svg"
+                  />
+                </span>
               </label>
-              <span class="remove h-4 w-4 cursor-pointer bg-icon-cross"></span>
             </li>
             <li
               class="list-item size-full h-14 list-none justify-between border border-blue-200 bg-blue-0 p-4 text-base text-blue-200"
             >
               <label class="list relative flex cursor-pointer items-center">
                 <input
-                  class="todo-checkbox checked:bg-gradient-to-r peer mr-2.5 h-5 w-5 cursor-pointer appearance-none rounded-full border border-blue-200 from-blue-700 to-blue-800 checked:bg-icon-checked checked:bg-center checked:bg-no-repeat"
+                  class="checked:bg-gradient-to-r peer mr-2.5 h-5 w-5 cursor-pointer appearance-none rounded-full border border-blue-200 from-blue-700 to-blue-800 checked:border-none checked:bg-blue-800 checked:bg-icon-checked checked:bg-center checked:bg-no-repeat"
                   type="checkbox"
                 />
                 <span class="text-blue-400 peer-checked:text-blue-500 peer-checked:line-through"
-                  >Complete Todo App on Front-End Mentor</span
+                  >Complete Todo App</span
                 >
+                <span class="remove h-3 w-3 cursor-pointer">
+                  <img
+                    class="absolute right-3 h-4 w-4"
+                    alt="cross-icon"
+                    title="cross-icon-image"
+                    src="images/icon-cross.svg"
+                  />
+                </span>
               </label>
-              <span class="remove h-4 w-4 cursor-pointer bg-icon-cross"></span>
             </li>
           </ul>
         </div>
