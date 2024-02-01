@@ -2,27 +2,33 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" href="public/icon-list.png" alt="list-icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="src/css/style.css" />
     <title>Abdullahi Todo List App</title>
   </head>
 
-  <body class="bg-blue-200 font-sans text-lg">
+  <body class="bg-blue-200 text-lg">
     <main role="main">
-      <div class="relative m-auto flex w-96 flex-col justify-center">
+      <section class="relative m-auto flex w-96 flex-col justify-center">
         <div
           class="fixed left-0 right-0 top-0 -z-10 h-1/3 w-screen bg-mobile-light bg-cover bg-no-repeat"
         ></div>
         <div class="my-28 mb-8 flex size-full justify-between">
-          <h1 class="text-4xl font-bold tracking-widest text-blue-100">TODO</h1>
+          <h1 class="text-4xl font-bold not-italic tracking-widest text-blue-100">TODO</h1>
           <img class="h-8 w-8 cursor-pointer" src="images/icon-moon.svg" alt="theme-icon" />
         </div>
 
         <form
           class="list-item size-full h-14 list-none justify-between border border-blue-200 bg-blue-0 p-4 text-base text-blue-200"
         >
-          <label class="relative flex cursor-pointer items-center">
+          <label class="relative flex cursor-pointer items-center rounded-t-lg font-sans">
             <input
               class="checked:bg-gradient-to-r peer mr-2.5 h-5 w-5 cursor-pointer appearance-none rounded-full border border-blue-200 from-blue-700 to-blue-800 checked:border-none checked:bg-blue-800 checked:bg-icon-checked checked:bg-center checked:bg-no-repeat"
               aria-label="input"
@@ -38,37 +44,40 @@
         </form>
 
         <div>
-          <ul class="mt-5 w-96 rounded-tl-lg">
+          <ul class="mt-5 w-96">
             <li
-              class="list-item size-full h-14 list-none justify-between border border-blue-200 bg-blue-0 p-4 text-base text-blue-200"
+              class="list-item size-full h-16 list-none justify-between rounded-t-lg border border-blue-200 bg-blue-0 p-4 text-base text-blue-200"
             >
-              <label class="list relative flex cursor-pointer items-center">
+              <label class="list relative flex cursor-pointer items-center pt-1.5">
                 <input
                   class="checked:bg-gradient-to-r peer mr-2.5 h-5 w-5 cursor-pointer appearance-none rounded-full border border-blue-200 from-blue-700 to-blue-800 checked:border-none checked:bg-blue-800 checked:bg-icon-checked checked:bg-center checked:bg-no-repeat"
+                  checked
                   type="checkbox"
                 />
-                <span class="text-blue-400 peer-checked:text-blue-500 peer-checked:line-through"
+                <span
+                  class="font-bold text-blue-400 peer-checked:text-blue-500 peer-checked:line-through"
                   >Complete online JavaScript course</span
                 >
-                <span class="remove h-3 w-3 cursor-pointer">
-                  <img
-                    class="absolute right-3 h-4 w-4"
-                    alt="cross-icon"
-                    title="cross-icon-image"
-                    src="images/icon-cross.svg"
-                  />
-                </span>
               </label>
+              <span class="remove h-3 w-3 cursor-pointer">
+                <img
+                  class="absolute right-7 top-72 h-4 w-4"
+                  alt="cross-icon"
+                  title="cross-icon-image"
+                  src="images/icon-cross.svg"
+                />
+              </span>
             </li>
             <li
-              class="list-item size-full h-14 list-none justify-between border border-blue-200 bg-blue-0 p-4 text-base text-blue-200"
+              class="list-item size-full h-16 list-none justify-between border border-blue-200 bg-blue-0 p-4 text-base text-blue-200"
             >
-              <label class="list relative flex cursor-pointer items-center">
+              <label class="list relative flex cursor-pointer items-center pt-1.5">
                 <input
                   class="checked:bg-gradient-to-r peer mr-2.5 h-5 w-5 cursor-pointer appearance-none rounded-full border border-blue-200 from-blue-700 to-blue-800 checked:border-none checked:bg-blue-800 checked:bg-icon-checked checked:bg-center checked:bg-no-repeat"
                   type="checkbox"
                 />
-                <span class="text-blue-400 peer-checked:text-blue-500 peer-checked:line-through"
+                <span
+                  class="font-bold text-blue-400 peer-checked:text-blue-500 peer-checked:line-through"
                   >Jog aound the park 3x</span
                 >
                 <span class="remove h-3 w-3 cursor-pointer">
@@ -82,14 +91,15 @@
               </label>
             </li>
             <li
-              class="list-item size-full h-14 list-none justify-between border border-blue-200 bg-blue-0 p-4 text-base text-blue-200"
+              class="list-item size-full h-16 list-none justify-between border border-blue-200 bg-blue-0 p-4 text-base text-blue-200"
             >
-              <label class="list relative flex cursor-pointer items-center">
+              <label class="list relative flex cursor-pointer items-center pt-1.5">
                 <input
                   class="checked:bg-gradient-to-r peer mr-2.5 h-5 w-5 cursor-pointer appearance-none rounded-full border border-blue-200 from-blue-700 to-blue-800 checked:border-none checked:bg-blue-800 checked:bg-icon-checked checked:bg-center checked:bg-no-repeat"
                   type="checkbox"
                 />
-                <span class="text-blue-400 peer-checked:text-blue-500 peer-checked:line-through"
+                <span
+                  class="font-bold text-blue-400 peer-checked:text-blue-500 peer-checked:line-through"
                   >10 minutes meditation</span
                 >
                 <span class="remove h-3 w-3 cursor-pointer">
@@ -103,14 +113,15 @@
               </label>
             </li>
             <li
-              class="list-item size-full h-14 list-none justify-between border border-blue-200 bg-blue-0 p-4 text-base text-blue-200"
+              class="list-item size-full h-16 list-none justify-between border border-blue-200 bg-blue-0 p-4 text-base text-blue-200"
             >
-              <label class="list relative flex cursor-pointer items-center">
+              <label class="list relative flex cursor-pointer items-center pt-1.5">
                 <input
                   class="checked:bg-gradient-to-r peer mr-2.5 h-5 w-5 cursor-pointer appearance-none rounded-full border border-blue-200 from-blue-700 to-blue-800 checked:border-none checked:bg-blue-800 checked:bg-icon-checked checked:bg-center checked:bg-no-repeat"
                   type="checkbox"
                 />
-                <span class="text-blue-400 peer-checked:text-blue-500 peer-checked:line-through"
+                <span
+                  class="font-bold text-blue-400 peer-checked:text-blue-500 peer-checked:line-through"
                   >Read for 1 hour</span
                 >
                 <span class="remove h-3 w-3 cursor-pointer">
@@ -124,14 +135,15 @@
               </label>
             </li>
             <li
-              class="list-item size-full h-14 list-none justify-between border border-blue-200 bg-blue-0 p-4 text-base text-blue-200"
+              class="list-item size-full h-16 list-none justify-between border border-blue-200 bg-blue-0 p-4 text-base text-blue-200"
             >
-              <label class="list relative flex cursor-pointer items-center">
+              <label class="list relative flex cursor-pointer items-center pt-1.5">
                 <input
                   class="checked:bg-gradient-to-r peer mr-2.5 h-5 w-5 cursor-pointer appearance-none rounded-full border border-blue-200 from-blue-700 to-blue-800 checked:border-none checked:bg-blue-800 checked:bg-icon-checked checked:bg-center checked:bg-no-repeat"
                   type="checkbox"
                 />
-                <span class="text-blue-400 peer-checked:text-blue-500 peer-checked:line-through"
+                <span
+                  class="font-bold text-blue-400 peer-checked:text-blue-500 peer-checked:line-through"
                   >Pick up groceries</span
                 >
                 <span class="remove h-3 w-3 cursor-pointer">
@@ -145,14 +157,15 @@
               </label>
             </li>
             <li
-              class="list-item size-full h-14 list-none justify-between border border-blue-200 bg-blue-0 p-4 text-base text-blue-200"
+              class="list-item size-full h-16 list-none justify-between border border-blue-200 bg-blue-0 p-4 text-base text-blue-200"
             >
-              <label class="list relative flex cursor-pointer items-center">
+              <label class="list relative flex cursor-pointer items-center pt-1.5">
                 <input
                   class="checked:bg-gradient-to-r peer mr-2.5 h-5 w-5 cursor-pointer appearance-none rounded-full border border-blue-200 from-blue-700 to-blue-800 checked:border-none checked:bg-blue-800 checked:bg-icon-checked checked:bg-center checked:bg-no-repeat"
                   type="checkbox"
                 />
-                <span class="text-blue-400 peer-checked:text-blue-500 peer-checked:line-through"
+                <span
+                  class="font-bold text-blue-400 peer-checked:text-blue-500 peer-checked:line-through"
                   >Complete Todo App</span
                 >
                 <span class="remove h-3 w-3 cursor-pointer">
@@ -169,7 +182,7 @@
         </div>
 
         <div
-          class="mob flex size-full h-14 justify-between border border-blue-200 bg-blue-0 p-4 text-base text-blue-500"
+          class="mob flex size-full h-14 justify-between rounded-b-lg border border-blue-200 bg-blue-0 p-4 text-base text-blue-500"
         >
           <div class="mob-count pt-1"><span>5</span> items left</div>
           <div class="mob-clear cursor-pointer">Clear Completed</div>
@@ -193,10 +206,10 @@
             </label>
           </div>
         </div>
-        <div class="dragdrop fixed bottom-5 self-center text-base text-blue-300">
+        <div class="dragdrop relative bottom-5 mb-8 mt-16 self-center text-base text-blue-400">
           <p>Drag and drop to reorder list</p>
         </div>
-      </div>
+      </section>
     </main>
   </body>
 </html>
