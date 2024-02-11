@@ -4,12 +4,4 @@
 
 .checkbox:checked {
   background: linear-gradient(to right, hsl(192deg 100% 67%), hsl(280deg 87% 65%));
-  background-repeat: no-repeat;
-  background-position: center;
-  border: none;
-}
-
-.icon-check {
-  position: relative;
-  right: 21px;
 }
