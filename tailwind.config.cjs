@@ -3,8 +3,8 @@ const defaultTheme = require('tailwindcss/defaultTheme');
 module.exports = {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
-    extend: {},
-    fontFamily: {
+    extend: {
+       fontFamily: {
       sans: ['Josefin Sans', ...defaultTheme.fontFamily.sans],
     },
     colors: {
@@ -16,8 +16,8 @@ module.exports = {
         400: 'hsl(235, 19%, 35%)',
         500: 'hsl(234, 11%, 52%)',
         600: 'hsl(220, 98%, 61%)',
-        700: "hsl(192, 100%, 67%)",
-        800: "hsl(280, 87%, 65%)",
+        700: 'hsl(192, 100%, 67%)',
+        800: 'hsl(280, 87%, 65%)',
       },
     },
     backgroundImage: {
@@ -25,5 +25,6 @@ module.exports = {
       'icon-checked': "url('../../images/icon-check.svg')",
     },
   },
+    },
   plugins: [],
 };
