@@ -23,7 +23,6 @@ module.exports = {
       },
       backgroundImage: {
         'mobile-light': "url('../../images/bg-mobile-light.jpg')",
-        'desktop-light': "url('../..images/bg-desktop-light.jpg')",
         'icon-checked': "url('../../images/icon-check.svg')",
       },
     },
