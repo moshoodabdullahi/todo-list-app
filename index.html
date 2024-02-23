@@ -17,18 +17,20 @@
   <body class="bg-blue-900 text-lg md:mx-auto md:w-[600px]">
     <main role="main">
       <section
-        class="fixed left-0 right-0 top-0 z-50 h-full items-center justify-center bg-blue-101 not-italic"
+        class="fixed left-0 right-0 top-0 z-50 hidden h-full items-center justify-center bg-blue-101 not-italic"
       >
         <div class="relative flex items-center justify-center">
           <div class="fixed bottom-[233px] w-[284px] rounded-lg bg-blue-0 p-[22px] shadow">
             <p class="text-center text-2xl font-semibold">Login to your account</p>
             <form>
-              <input
-                class="my-2 w-[100%] rounded-lg border border-blue-300 p-3 shadow-sm outline-none ring-1 ring-offset-0 placeholder:text-blue-300 hover:bg-blue-0"
-                id="email"
-                placeholder="Email Address"
-                required
-              />
+              <label for="email">
+                <input
+                  class="my-2 w-[100%] rounded-lg border border-blue-300 p-3 shadow-sm outline-none ring-1 ring-offset-0 placeholder:text-blue-300 hover:bg-blue-0"
+                  id="email"
+                  placeholder="Email Address"
+                  required
+                />
+              </label>
               <button
                 class="flex w-full items-center justify-center rounded-lg bg-blue-101 p-3 font-bold text-blue-0 outline-none ring-1 hover:bg-blue-950 hover:text-blue-600 active:mx-[1px]"
                 type="submit"
