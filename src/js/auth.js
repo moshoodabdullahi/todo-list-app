@@ -20,6 +20,7 @@ const auth = () => {
     const session = {
       userId,
       email,
+      created_at: new Date().toISOString(),
     };
 
     sessionStorage.setItem('session', JSON.stringify(session));
@@ -37,4 +38,4 @@ const auth = () => {
   };
 };
 
-export default auth;
+export default auth();

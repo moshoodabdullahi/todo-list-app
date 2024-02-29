@@ -14,22 +14,17 @@ const signOut = () => {
   authenticationPage.classList.replace('hidden', 'flex');
 };
 
-const session = authHandler.getSession();
-console.log(session);
-
 signInButton.addEventListener('click', signIn, () => {
   const emailInput = document.querySelector('#email');
 
   const email = emailInput.value;
   try {
     authHandler.signIn(email);
-    console.log('Signed in:', session);
   } catch (error) {
-    console.error(error.message);
+    error.message = error;
   }
 });
 
 signOutButton.addEventListener('click', signOut, () => {
   authHandler.signOut();
-  console.log('Signed out');
 });
