@@ -3,6 +3,7 @@ import auth from './auth';
 const authenticationPage = document.querySelector('#authentication-page');
 const signInButton = document.querySelector('#sign-in-button');
 const signOutButton = document.querySelector('#sign-out-button');
+const formButton = document.querySelector('#form-button');
 
 const authHandler = auth();
 
@@ -14,17 +15,22 @@ const signOut = () => {
   authenticationPage.classList.replace('hidden', 'flex');
 };
 
-signInButton.addEventListener('click', signIn, () => {
-  const emailInput = document.querySelector('#email');
+const submitEvent = (event) => {
+  event.preventDefault();
 
-  const email = emailInput.value;
-  try {
-    authHandler.signIn(email);
-  } catch (error) {
-    error.message = error;
-  }
-});
+  signInButton.addEventListener('click', signIn, () => {
+    const emailInput = document.querySelector('#email');
 
+    const email = emailInput.value;
+    try {
+      authHandler.signIn(email);
+    } catch (error) {
+      error.message = error;
+    }
+  });
+};
+
+formButton.addEventListener('submit', submitEvent);
 signOutButton.addEventListener('click', signOut, () => {
   authHandler.signOut();
 });
