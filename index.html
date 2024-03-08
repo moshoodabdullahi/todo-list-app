@@ -21,12 +21,12 @@
         id="authentication-page"
       >
         <div class="relative flex items-center justify-center">
-          <div class="fixed bottom-[335px] w-[340px] rounded-lg bg-blue-0 p-[22px] shadow">
+          <div class="fixed m-[335px] w-[60%] rounded-lg bg-blue-0 p-[22px] shadow md:w-[35%]">
             <p class="text-center text-2xl font-semibold">Login to your account</p>
             <form id="form-button">
               <label for="email">
                 <input
-                  class="my-2 w-[100%] rounded-lg border border-blue-300 p-3 shadow-sm outline-none ring-1 ring-offset-0 placeholder:text-blue-300 hover:bg-blue-0"
+                  class="my-2 w-full rounded-lg border border-blue-300 p-3 shadow-sm outline-none ring-1 ring-offset-0 placeholder:text-blue-300 hover:bg-blue-0"
                   type="email"
                   id="email"
                   title="Email Address"
@@ -46,7 +46,10 @@
         </div>
       </section>
 
-      <section class="relative m-auto flex w-96 flex-col justify-center md:w-[34rem]">
+      <section
+        class="relative m-auto hidden w-96 flex-col justify-center md:w-[34rem]"
+        id="todos-page"
+      >
         <div
           class="fixed inset-x-0 top-0 -z-10 h-1/3 w-screen bg-mobile-light bg-cover bg-no-repeat"
         ></div>

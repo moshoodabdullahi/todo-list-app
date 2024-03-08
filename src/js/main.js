@@ -4,15 +4,18 @@ const authenticationPage = document.querySelector('#authentication-page');
 const signInButton = document.querySelector('#sign-in-button');
 const signOutButton = document.querySelector('#sign-out-button');
 const formButton = document.querySelector('#form-button');
+const todosPage = document.querySelector('#todos-page');
 
 const authHandler = auth();
 
 const signIn = () => {
   authenticationPage.classList.replace('flex', 'hidden');
+  todosPage.classList.replace('hidden', 'flex');
 };
 
 const signOut = () => {
   authenticationPage.classList.replace('hidden', 'flex');
+  todosPage.classList.replace('flex', 'hidden');
 };
 
 const submitEvent = (event) => {
