@@ -1,14 +1,17 @@
 const { nanoid } = 'nanoid';
+const VALID_EMAIL_KEY = 'dema-todo-list.valid.userEmail';
+const VALID_USER_ARRAY = 'dema-todo-list.valid.userArray';
+const errorMessage = document.querySelector('#error-message');
+const email = document.querySelector('#email');
 
 const auth = () => {
   const getSession = () => {
-    const sessionData = sessionStorage.getItem('moshoodabdullahi-todo-list-app-session');
+    const sessionData = sessionStorage.getItem(VALID_EMAIL_KEY);
     return sessionData ? JSON.parse(sessionData) : null;
   };
 
-  const getLocalStorageUser = (userEmail) => {
-    const userArray = JSON.parse(localStorage.getItem('userArray')) || [];
-    const foundUser = userArray.find((userData) => userData.email === userEmail);
+  const getLocalStorageUser = () => {
+    const foundUser = VALID_USER_ARRAY.find((userData) => userData.email === VALID_EMAIL_KEY);
 
     if (foundUser) {
       return foundUser.session;
@@ -16,27 +19,22 @@ const auth = () => {
     return null;
   };
 
-  const addLocalStorageUser = (sessionData) => {
-    const userArray = JSON.parse(localStorage.getItem('userArray')) || [];
-    userArray.push(sessionData);
+  const signIn = () => {
+    const validateEmail = () => {
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      return emailRegex.test(email);
+    };
 
-    localStorage.setItem('userArray', JSON.stringify(userArray));
-  };
-
-  const validateEmail = (email) => {
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return emailRegex.test(email);
-  };
-
-  const signIn = (email) => {
-    if (!validateEmail(email)) {
-      throw new Error('Invalid email format');
+    if (validateEmail(email)) {
+      errorMessage.textContent = '';
+    } else {
+      errorMessage.textContent = 'Email must be in lowercase.';
+      return errorMessage;
     }
 
     const user = getLocalStorageUser(email);
 
     if (user) {
-      sessionStorage.setItem('moshoodabdullahi-todo-user', JSON.stringify(user));
       return sessionStorage.getItem('user');
     }
     const userId = nanoid();
@@ -47,7 +45,6 @@ const auth = () => {
     };
 
     sessionStorage.setItem('moshoodabdullahi-todo-list-app-session', JSON.stringify(session));
-    addLocalStorageUser(session);
     return session;
   };
 
