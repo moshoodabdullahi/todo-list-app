@@ -28,7 +28,7 @@ const auth = () => {
     if (validateEmail(email)) {
       errorMessage.textContent = '';
     } else {
-      errorMessage.textContent = 'Email must be in lowercase.';
+      errorMessage.textContent.signIn = 'Enter your email address';
       return errorMessage;
     }
 
