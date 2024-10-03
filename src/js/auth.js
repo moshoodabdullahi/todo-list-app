@@ -15,9 +15,8 @@ const auth = () => {
 
     if (foundUser) {
       return foundUser.session;
-    } else {
-      return null
     }
+    return null;
   };
 
   const signIn = () => {
