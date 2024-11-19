@@ -6,6 +6,13 @@ const signOutButton = document.querySelector('#sign-out-button');
 const todosPage = document.querySelector('#todos-page');
 const formButton = document.querySelector('#form');
 
+function emailInputField() {
+  const emailInput = document.querySelector('#email').value;
+  signInButton.disabled = !emailInput;
+}
+
+document.getElementById('email').addEventListener('input', emailInputField);
+
 const authHandler = auth();
 
 const signIn = (email) => {
